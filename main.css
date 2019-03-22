@@ -1,7 +1,112 @@
 html {box-sizing: border-box}
 *,*::before,*::after{box-sizing: inherit}
 
-#top {
-    display: flex;
-    flex-wrap: wrap;
+body {
+    font-family: "Graphik Webfont", "Droid Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #222222;
+
+}
+
+.top {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 5fr 4fr;
+    text-decoration: none;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: solid 1px #ccc;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.topBar {
+    padding: 5px;
+}
+
+#logo {
+    text-align: right;
+}
+
+.topForm {
+    width: 95%;
+    margin: 10px;
+    position: relative;
+    top: 0;
+}
+
+.topLinks {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 3fr 2fr 3fr 1fr 1fr;
+    padding: 5px;
+}
+
+.links {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 2px;
+    border-right: solid 1px #ccc; 
+    height: 40px;
+}
+
+.unitI {
+    margin: -20px auto auto;
+    height: 24px;
+}
+
+.unitA {
+    text-decoration: none;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    margin: auto;
+    color: #222222;
+}
+
+#account ul li:last-of-type {
+    border-right: none;
+}
+   
+input {
+    width: 60%;
+    height: 34px;
+    border: solid 1px #ccc;
+    box-shadow: #bbb 0px 1px 2px 0px inset;
+    border-radius: 3px 0px 0px 3px;
+    position: absolute;
+    padding: 10px;
+    outline: none;
+}
+
+::placeholder {
+    color: #bbb;
+    font-size: 14px;
+    font-weight: 100px;
+}
+
+button {
+    width: 15%;
+    height: 35px;
+    line-height: 17px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #222222;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    position: absolute;
+    left: 60%;
+}
+
+button:hover {
+    background-color: #3c3c3c;
+}
+
+.navBar{
+    height: 57px;
+    padding: 20px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 15.01% 12.17% 10.57% 11.81% 14.48% 12.34% 10.48% 6.75% 6.39%;
+    word-wrap: normal;
 }

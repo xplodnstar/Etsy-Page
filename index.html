@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="main.css">
 
 <head>
     <meta charset="UTF-8">
     <title>Eentsy Search</title>
 </head>
-<header>
-    <div id="top">
-        <div id="logo">
-
-        </div>
-        <div id="search">
-
-        </div>
-        <div id="account">
-
-        </div>
-    </div>
-    <nav>
-
-    </nav>
-</header>
 
 <body>
+    <header>
+        <div id="top" class="top">
+            <div id="logo" class="topBar">
+                <a href="#"><img src="./assets/logo.png" alt="Etsy logo" width="80px"></a>
+            </div>
+            <div id="search" class="topBar">
+                <form action="post" class="topForm">
+                    <input type="text" placeholder="Search for items or shops">
+                    <button>Search</button>
+                </form>
+            </div>
+            <div id="account" class="topBar">
+                <ul class="topLinks">
+                    <li class="links">
+                        <a href="#" id="sell" class="unitA">Sell on Etsy</a>
+                    </li>
+                    <li class="links">
+                        <a href="#" class="unitA"><img src="./assets/chest.png"
+                                onmouseover="this.src='./assets/chest_gray.png'"
+                                onmouseout="this.src='./assets/chest.png'" alt="" id="discover" class="unitI"></a>
+                        <a href="#" class="unitA">Discover</a>
+                    </li>
+                    <li class="links">
+                        <a href="#" class="unitA"><img src="./assets/bell.png"
+                                onmouseover="this.src='./assets/bell_gray.png'"
+                                onmouseout="this.src='./assets/bell.png'" alt="" id="notify" class="unitI"></a>
+                        <a href="#" class="unitA">Notifications</a>
+                    </li>
+                    <li class="links">
+                        <a href="#" class="unitA"><img src="./assets/you.png"
+                                onmouseover="this.src='./assets/you_gray.png'" onmouseout="this.src='./assets/you.png'"
+                                alt="" id="you" class="unitI"></a>
+                        <a href="#" class="unitA">You</a>
+                    </li>
+                    <li class="links">
+                        <a href="#" class="unitA"><img src="./assets/cart.png"
+                                onmouseover="this.src='./assets/cart_gray.png'"
+                                onmouseout="this.src='./assets/cart.png'" alt="" id="cart" class="unitI"></a>
+                        <a href="#" class="unitA">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navBar">
+            <ul class="navigation">
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+                <li class="navItems"></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>Sidebar</aside>
 
 </body>
 
