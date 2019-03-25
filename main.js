@@ -1,4 +1,4 @@
-var itemList = document.querySelector('#itemList')
+var itemList = document.querySelector('.grid')
 var results = document.querySelector('#results')
 
 var resultText = `
@@ -35,7 +35,7 @@ var itemGrid = effThis.map(item => {
     }
 
     return `
-    <div id="itemList">
+    <div class="itemList">
         <a href="${item.url}" target="_blank"> 
             <img src="${item.images}" class="pic" /><br>
             <span class="title"><abbr title="${item.title}">${title}</abbr></span>

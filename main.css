@@ -280,11 +280,11 @@ input[type='radio']:checked {
 
 .itemContainer {
     margin: 15px;
-   
 }
 
 #results {
     font-size: 12px;
+    
 }
 #results a {
     text-decoration: none;
@@ -292,28 +292,19 @@ input[type='radio']:checked {
 }
 
 .grid{
-
-    margin: 15px;
     display: flex;
-    flex-direction: row;  
-    flex-wrap: wrap;
-    width: 24.5%;
-
+    flex-wrap: wrap; 
 }
 
-#itemList {
-    margin: 15px;
+.itemList {
     color: #222;
     font-size: 14px;
-    width: 250px;
-   
-
- 
-
-
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
 }
 
-#itemList a {
+.itemList a {
     text-decoration: none;
 }
 
