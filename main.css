@@ -12,63 +12,59 @@ body {
     grid-gap: 10px;
     grid-template-columns: 1fr 5fr 4fr;
     text-decoration: none;
-    height: 80px;
-    line-height: 80px;
     border-bottom: solid 1px #ccc;
-    padding: 10px;
     font-size: 14px;
-}
-
-.topBar {
-    padding: 5px;
 }
 
 #logo {
     text-align: right;
+    padding: 13px 0;
 }
 
 .topForm {
     width: 95%;
-    margin: 10px;
     position: relative;
     top: 0;
+    padding: 13px 0;
 }
 
 .topLinks {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 3fr 2fr 3fr 1fr 1fr;
-    padding: 5px;
+    display: flex;
+    align-items:center;
+ 
+    margin-right: 5px;
 }
 
 .links {
     list-style: none;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    grid-gap: 2px;
-    border-right: solid 1px #ccc; 
+    display: flex;
+    flex-direction: column;
     height: 40px;
+    padding: 0 15px;
+    border-left: solid 1px #ccc; 
 }
 
-.unitI {
-    margin: -20px auto auto;
-    height: 24px;
+#sell {
+    min-width: 62px;
+}
+
+.unitI {   
+    width: 20px;
 }
 
 .unitA {
     text-decoration: none;
-    text-align: center;
-    height: 20px;
-    line-height: 20px;
+    font-size: 12px;
+    font-weight: 100;
     margin: auto;
     color: #222222;
 }
 
-#account ul li:last-of-type {
-    border-right: none;
+#account ul li:first-of-type {
+    border-left: none;
 }
    
-input {
+#searchBar {
     width: 60%;
     height: 34px;
     border: solid 1px #ccc;
@@ -81,11 +77,11 @@ input {
 
 ::placeholder {
     color: #bbb;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 100px;
 }
 
-button {
+#searchButton {
     width: 15%;
     height: 35px;
     line-height: 17px;
@@ -98,15 +94,255 @@ button {
     left: 60%;
 }
 
-button:hover {
+#searchButton:hover {
     background-color: #3c3c3c;
 }
 
 .navBar{
-    height: 57px;
-    padding: 20px;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 15.01% 12.17% 10.57% 11.81% 14.48% 12.34% 10.48% 6.75% 6.39%;
-    word-wrap: normal;
+    padding: 0 20px;
+    border-bottom: solid 1px #ccc;
+    font-size: 14px;
+    font-weight: 100;
+    color: #222;
+    height: 35px;
+
 }
+
+.navigation {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height: 100%;
+    margin: 0;
+}
+
+.navigation li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navItems:hover {
+    border-bottom: solid  2px #f45800
+}
+
+aside{
+    float: left;
+    padding: 5px;
+    margin: 15px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    width: 13%;
+    min-width: 200px;
+}
+
+fieldset {
+    border: none;
+    padding: 3px;
+    margin: 5px 2px;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+legend {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    width: 95%;
+}
+
+#special {
+    background-color: #fbead8;
+    padding: 3px;
+    margin: 5px;
+}
+
+fieldset a {
+    text-decoration: none;
+    margin-left: 13px;
+    color: #222222;
+}
+
+.more {
+    margin: 0;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* input[type='radio'] {
+    color: #f45800;
+    background-color: white;
+  
+}
+
+input[type='radio']:checked::before {
+    color: #f45800;
+    background-color: white;
+    
+}
+
+input[type='radio']:checked::after {
+    color: #f45800;
+    background-color: white;
+   
+}
+
+input[type='radio']:checked {
+    color: #f45800;
+    background-color: white;
+   
+} */
+
+#whereBar {
+    margin: 0 3px 0 15px;
+    height: 30px;
+    width: 65%;
+    border: solid 1px #ccc;
+    box-shadow: #bbb 0px 1px 2px 0px inset;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+    outline: none;
+}
+
+#whereButton {
+    border: solid 1px #ccc;
+    border-radius: 3px 3px 3px 3px;
+    background-image: url("./assets/arrow.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    box-shadow: #bbb 0px 1px 2px 0px inset;
+    margin: 0 0 0 3px;
+    position: relative;
+    top: 8px;
+}
+
+#lowBar {
+    margin: 0 3px 0 15px;
+    height: 30px;
+    width: 28%;
+    border: solid 1px #ccc;
+    box-shadow: #bbb 0px 1px 2px 0px inset;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+    outline: none;
+}
+
+#highBar {
+    margin: 0 3px 0 3px;
+    height: 30px;
+    width: 28%;
+    border: solid 1px #ccc;
+    box-shadow: #bbb 0px 1px 2px 0px inset;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+    outline: none;
+}
+
+#rangeButton {
+    border: solid 1px #ccc;
+    border-radius: 3px 3px 3px 3px;
+    background-image: url("./assets/arrow.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    box-shadow: #bbb 0px 1px 2px 0px inset;
+    margin: 0 0 0 3px;
+    position: relative;
+    top: 7px;
+}
+
+#shipTo {
+    height: 34px;
+    width: 100%;
+    border: solid 1px #ccc;
+    box-shadow: #bbb 0px 1px 2px 0px inset;
+    border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+    outline: none;
+    color: #ccc;
+    background-color: white;
+}
+
+.itemContainer {
+    margin: 15px;
+   
+}
+
+#results {
+    font-size: 12px;
+}
+#results a {
+    text-decoration: none;
+    color: #222;
+}
+
+.grid{
+
+    margin: 15px;
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+    width: 24.5%;
+
+}
+
+#itemList {
+    margin: 15px;
+    color: #222;
+    font-size: 14px;
+    width: 250px;
+   
+
+ 
+
+
+}
+
+#itemList a {
+    text-decoration: none;
+}
+
+.pic {
+    width: 200px;
+}
+
+.title {
+    color: #222;
+    text-decoration: none;
+}
+
+.store {
+    color: #222;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.review {
+    color: #222;
+    font-size: 12px; 
+}
+
+.review img {
+    height: 14px; 
+}
+
+.price {
+    color: #222;
+    font-size: 16px;
+}
+

@@ -15,8 +15,8 @@
             </div>
             <div id="search" class="topBar">
                 <form action="post" class="topForm">
-                    <input type="text" placeholder="Search for items or shops">
-                    <button>Search</button>
+                    <input type="text" placeholder="Search for items or shops" id="searchBar">
+                    <button id="searchButton">Search</button>
                 </form>
             </div>
             <div id="account" class="topBar">
@@ -53,20 +53,129 @@
         </div>
         <nav class="navBar">
             <ul class="navigation">
-                <li class="navItems"></li>
-                <li class="navItems"></li>
-                <li class="navItems"></li>
-                <li class="navItems"></li>
-                <li class="navItems"></li>
-                <li class="navItems"></li>
-                <li class="navItems"></li>
-                <li class="navItems"></li>
-                <li class="navItems"></li>
+                <li class="navItems">Jewelry & Accessories</li>
+                <li class="navItems">Clothing & Shoes</li>
+                <li class="navItems">Home & Living</li>
+                <li class="navItems">Wedding & Party</li>
+                <li class="navItems">Toys & Entertainment</li>
+                <li class="navItems">Art & Collectibles</li>
+                <li class="navItems">Craft Supplies</li>
+                <li class="navItems" class="navItemsCen">Vintage</li>
+                <li class="navItems" class="navItemsCen"><img src="./assets/gift.png" width="16px" alt=""> Gifts</li>
             </ul>
         </nav>
     </header>
-    <aside>Sidebar</aside>
+    <aside>
+        <form action="get">
+            <div id="special">
+                <fieldset>
+                    <legend>Special offers</legend>
+                    <input type="checkbox" name="sale" id="sale"><label for="sale">On Sale</label>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend> All categories</legend>
+                <a href="#">Weddings</a><br>
+                <a href="#">Paper & Party Supplies</a><br>
+                <a href="#">Jewelry</a><br>
+                <a href="#">Accessories</a><br>
+                <a href="#" class="more">+ Show more</a>
+            </fieldset>
+            <fieldset>
+                <legend>Shipping</legend>
+                <input type="checkbox" name="free" id="free"><label for="free">Free shipping</label><br>
+                <input type="checkbox" name="day1" id="day1"><label for="day1">Ready to ship in 1 business
+                    day</label><br>
+                <input type="checkbox" name="day3" id="day3"><label for="day3">Ready to ship within 3 business
+                    days</label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Occasion</legend>
+                <input type="checkbox" name="bday1" id="bday1"><label for="bday1">1st birthday</label><br>
+                <input type="checkbox" name="anniv" id="anniv"><label for="anniv">Anniversary</label><br>
+                <input type="checkbox" name="bShower" id="bShower"><label for="bShower">Baby shower</label><br>
+                <input type="checkbox" name="bachParty" id="bachParty"><label for="bachParty">Bachelor party</label><br>
+                <input type="checkbox" name="bachettParty" id="bachettParty"><label for="bachettParty">Bachelorette
+                    party</label><br>
+                <a href="#" class="more">+ Show more</a>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Holiday</legend>
+                <input type="checkbox" name="lunarNY" id="lunarNY"><label for="lunarNY">Lunar New Year</label><br>
+                <input type="checkbox" name="xmas" id="xmas"><label for="xmas">Christmas</label><br>
+                <input type="checkbox" name="cincoMayo" id="cincoMayo"><label for="cincoMayo">Cinco de Mayo</label><br>
+                <input type="checkbox" name="easter" id="easter"><label for="easter">Easter</label><br>
+                <input type="checkbox" name="fatherDay" id="fatherDay"><label for="fatherDay">Father's Day</label><br>
+                <a href="#" class="more">+ Show more</a>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Color</legend>
+                <input type="checkbox" name="beige" id="beige"><label for="beige">Beige</label><br>
+                <input type="checkbox" name="black" id="black"><label for="black">Black</label><br>
+                <input type="checkbox" name="blue" id="blue"><label for="blue">Blue</label><br>
+                <input type="checkbox" name="bronze" id="bronze"><label for="bronze">Bronze</label><br>
+                <input type="checkbox" name="brown" id="brown"><label for="brown">Brown</label><br>
+                <a href="#" class="more">+ Show more</a>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Shop location</legend>
+                <input type="radio" name="location" id="anywhere"><label for="anywhere">Anywhere</label><br>
+                <input type="radio" name="location" id="US"><label for="US">United States</label><br>
+                <input type="radio" name="location" id="custom"><label for="custom">Custom</label><br>
+                <input type="text" placeholder="Enter location" id="whereBar">
+                <button id="whereButton"></button>
+            </fieldset>
+            <fieldset>
+                <legend>Item type</legend>
+                <input type="radio" name="itemType" id="allItems"><label for="allItems">All items</label><br>
+                <input type="radio" name="itemType" id="handmade"><label for="handmade">Handmade</label><br>
+                <input type="radio" name="itemType" id="vintage"><label for="vintage">Vintage</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Price ($)</legend>
+                <input type="radio" name="price" id="anyPrice"><label for="anyPrice">Any price</label><br>
+                <input type="radio" name="price" id="under10"><label for="under10">Under $10</label><br>
+                <input type="radio" name="price" id="to35"><label for="to35">$10 to $35</label><br>
+                <input type="radio" name="price" id="to60"><label for="to60">$35 to $60</label><br>
+                <input type="radio" name="price" id="over60"><label for="over60">Over $60</label><br>
+                <input type="radio" name="price" id="customPrice"><label for="customPrice">Custom</label><br>
+                <input type="text" placeholder="Low" id="lowBar"><span> to </span><input type="text" placeholder="High"
+                    id="highBar">
+                <button id="rangeButton"></button>
+            </fieldset>
+            <fieldset>
+                <legend>Ordering options</legend>
+                <input type="checkbox" name="gc" id="gc"><label for="gc">Accepts Etsy gift cards</label><br>
+                <input type="checkbox" name="customize" id="customize"><label for="customize">Customizable</label><br>
+                <input type="checkbox" name="wrapped" id="wrapped"><label for="wrapped">Can be gift-wrapped</label><br>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Ship to</legend>
+                <select name="shipTo" id="shipTo">
+                    <option value="USA">United States</option>
+                    <option value="england">England</option>
+                    <option value="antarctica">Antarctica</option>
+                </select>
+            </fieldset>
+        </form>
+    </aside>
+    <div class="itemContainer">
+        <div id="results">
 
+        </div>
+        <div class="grid">
+            <div id="itemList">
+
+            </div>
+        </div>
+    </div>
+    <script src="items.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
